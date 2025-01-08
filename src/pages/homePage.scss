@@ -1,0 +1,43 @@
+@import "../asset/styles/gobal.scss";
+@import "../asset/styles/variable.scss";
+.homeWrapper {
+  height: 100%;
+  width: 100%;
+  // padding: 0 7%;
+  .outletWrapper {
+    height: calc(100% - 81px);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 4px;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+      }
+    }
+    .responsiveNavBar {
+      height: 100%;
+      @extend .flexCenter;
+      flex-direction: column;
+      .navlist {
+        font-family: $poppins-bold;
+        color: $Text-Grey-Color;
+        font-size: 28px;
+        height: 20%;
+        cursor: pointer;
+        &:hover {
+          color: $orange;
+        }
+      }
+      .navlist1 {
+        color: $orange;
+      }
+    }
+  }
+}

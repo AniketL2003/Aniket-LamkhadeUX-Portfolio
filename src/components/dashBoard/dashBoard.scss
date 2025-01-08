@@ -1,0 +1,152 @@
+@import "../../asset/styles/gobal.scss";
+@import "../../asset/styles/variable.scss";
+
+.dashBoardParent {
+  background-image: url("../../asset/images/Bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 86%;
+  padding: 0 7%;
+  .dashBoardWrapper {
+    height: 100%;
+    @extend .flex;
+    justify-content: space-between;
+    .infoContainer {
+      height: 100%;
+
+      .statusContainer {
+        @extend .flex;
+        height: 20%;
+        align-items: center;
+        .imageContainer {
+          height: 50%;
+          .logoPersonal {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 1px solid $orange;
+          }
+        }
+        .statusTagContainer {
+          height: 20%;
+          .statusTag {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .tittleContainer {
+      width: 100%;
+      .mainTitleContainer {
+        @extend .flexColumn;
+        align-items: flex-start;
+        padding: 2% 0;
+        .title {
+          font-family: $lunema-bold;
+          font-size: 38px;
+        }
+      }
+      .subtitleContainer {
+        width: 100%;
+        .subTitle {
+          display: flex;
+          font-family: $poppins-regular;
+          font-size: 14px;
+          // width: 60%;
+          .subTextHighlight {
+            color: $orange;
+            font-family: $poppins-bold;
+            padding: 0 0.5%;
+          }
+        }
+      }
+    }
+    .bottomWrapper {
+      height: 50%;
+      .bottomContainer {
+        @extend .flex;
+        height: 100%;
+        .buttonWrapper {
+          height: 100%;
+          width: 55%;
+          .normalButtonContainer {
+            @extend .flexSpaceBetween;
+            height: 45%;
+            align-items: center;
+            .primaryBtn {
+              // background-color: $orange;
+              // border: 1px solid $orange;
+              // color: white;
+              font-family: $poppins-bold;
+              font-size: 14px;
+              border-radius: 10px;
+              padding: 0.5% 2%;
+              text-transform: none;
+              // height: 30%;
+              width: 95%;
+            }
+            .SecondoryBtn {
+              border: 1px solid $orange;
+              text-transform: none;
+              font-family: $poppins-bold;
+              color: black;
+              font-size: 14px;
+              border-radius: 10px;
+              padding: 0.5% 1%;
+              width: 35%;
+              height: 30%;
+            }
+          }
+          .bottomArrowWrapper {
+            @extend .flex;
+            height: calc(100% - 45%);
+            align-items: end;
+            .bottomArrow {
+              height: 35px;
+            }
+          }
+        }
+        .profileImgWrapper {
+          // height: 100%;
+          position: absolute;
+          /* right: 32%; */
+          bottom: 0%;
+          z-index: 10;
+          width: calc(86%);
+          display: flex;
+          justify-content: center;
+          .profileImgContianer {
+            // height: 100%;
+            .profileImg {
+              // height: 100%;
+              filter: grayscale(100%);
+            }
+          }
+        }
+      }
+    }
+    .imageWrapper {
+      width: 45%;
+      @extend .flex;
+      align-items: end;
+      justify-content: flex-end;
+      .profleImage {
+        height: 80%;
+        width: 80%;
+      }
+    }
+    // responsive media querys
+    @media (max-width: 1000px) {
+      .imageWrapper {
+        display: none;
+      }
+      .bottomContainer {
+        .buttonWrapper {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "poppinsBold";
+  src: local("poppinsBold"), url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppinsMedium";
+  src: local("poppinsMedium"),
+    url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsMedium";
+  src: local("poppinsMedium"),
+    url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsRegular";
+  src: local("poppinsRegular"),
+    url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsLight";
+  src: local("poppinsLight"),
+    url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsSemiBold";
+  src: local("poppinsSemiBold"),
+    url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppinsExtraBold";
+  src: local("poppinsExtraBold"),
+    url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face{
+  font-family: "lunemaRegular";
+  src: local('lunemaRegular'),
+  url('../fonts/Lunema\ Regular.otf') format('truetype');
+}
+@font-face{
+  font-family: "lunemaUltraBold";
+  src: local('lunemaUltraBold'),
+  url('../fonts/Lunema\ Ultra\ bold.otf') format('truetype');
+}
+
+$poppins-bold: poppinsBold;
+$poppins-regular: poppinsRegular;
+$poppins-light: poppinsLight;
+$poppins-semibold: poppinsSemiBold;
+$poppins-medium: poppinsMedium;
+$poppins-ExtraBold: poppinsExtraBold;
+$lunema:lunemaRegular;
+$lunema-bold:lunemaUltraBold;
+
+$xs: 0px;
+$sm: 600px;
+$md: 900px;
+$lg: 1200px;
+$xl: 1536px;
+
+//Color
+
+$Text-Grey-Color:#828282;
+$orange:#E27022;
+$background-Color:#FAFAFA;

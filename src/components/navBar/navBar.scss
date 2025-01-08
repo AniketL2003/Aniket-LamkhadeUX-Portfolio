@@ -1,0 +1,51 @@
+@import "../../asset/styles/gobal.scss";
+@import "../../asset/styles/variable.scss";
+
+.navBarWrapper {
+  padding: 0 7%;
+  .navBarContainer {
+    @extend .flexSpaceBetween;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid $Text-Grey-Color;
+    .appLogo {
+      height: 45px;
+    }
+    .navListContainer {
+      @extend .flexSpaceBetween;
+      width: 30%;
+      padding-top: 12px;
+      .navlist {
+        font-family: $poppins-bold;
+        color: $Text-Grey-Color;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+          color: $orange;
+        }
+      }
+      .navlist1 {
+        color: $orange;
+      }
+    }
+    .menuIcon{
+      display: none;
+      cursor: pointer;
+    }
+    //responsive media querys
+    @media (max-width: 1000px) {
+      .navListContainer {
+        width: 45%;
+      }
+    }
+    @media (max-width: 750px) {
+      .navListContainer {
+        display: none;
+      }
+      .menuIcon{
+        display: block !important;
+      }
+    }
+  }
+}
