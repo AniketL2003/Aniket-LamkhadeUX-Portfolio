@@ -1,0 +1,51 @@
+@import "../../../asset/styles/gobal.scss";
+@import "../../../asset/styles/variable.scss";
+
+.footerWrapper {
+  width: 86%;
+  padding: 4% 7%;
+  height: 80px;
+  background-color: $footer-Color;
+  // @media screen and (max-width: 550px) {
+  //   height: 80px;
+  // }
+  .footerContent {
+    @extend .flexColumn;
+    height: 75%;
+    align-items: start;
+    .footerUpperSectionWrapper {
+      @extend .flex;
+      justify-content: space-between;
+      height: 75%;
+      width: 100%;
+      border-bottom: 2px solid #0000004d;
+      align-items: center;
+      padding-bottom: 10px;
+      .iconContainer {
+        height: 100%;
+        .footerIcon {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .contactContainer {
+        height: 100%;
+        @extend .flex;
+        align-items: end;
+        .contactIcons {
+          height: 50%;
+          margin-left: 25px;
+        }
+      }
+    }
+    .footerText {
+      font-family: $poppins-medium;
+      font-size: 14px;
+      color: $Text-Grey-Color;
+      margin: 10px 0;
+      @media screen and (max-width: 550px) {
+        font-size: 9px;
+      }
+    }
+  }
+}
