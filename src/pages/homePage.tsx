@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavBar } from "../components/navBar/navBar";
 import "./homePage.scss";
 import { Outlet, useNavigate } from "react-router-dom";
+import { Footer } from "../components/commonComponent/footer/footer";
 
 export const HomePage = () => {
   const [handleResponsiveNavBars, setHandleResponsiveNavBars] = useState(false);
@@ -20,11 +21,19 @@ export const HomePage = () => {
               <span className="navlist navlist1">Home</span>
               <span className="navlist">Work</span>
               <span className="navlist">About</span>
-              <span className="navlist">Contact</span>
+              <span
+                className="navlist"
+                onClick={() => {
+                  window.open("https://tally.so/r/3j5lRR", "_blank");
+                }}
+              >
+                Contact
+              </span>
             </div>
           ) : (
             <>
               <Outlet />
+              <Footer/>
             </>
           )}
         </div>

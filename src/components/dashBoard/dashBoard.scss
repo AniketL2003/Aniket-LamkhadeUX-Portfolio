@@ -20,6 +20,9 @@
         @extend .flex;
         height: 20%;
         align-items: center;
+        @media (max-width: 650px) {
+          justify-content: center;
+        }
         .imageContainer {
           height: 50%;
           .logoPersonal {
@@ -105,6 +108,7 @@
             align-items: end;
             .bottomArrow {
               height: 35px;
+              margin-bottom: 45px;
             }
           }
         }

@@ -27,7 +27,9 @@ export const DashBoard = () => {
                   <LoadingButtonCustom
                     className="primaryBtn"
                     buttonLabel={"Let's Work Together"}
-                    onClickCallBack={() => {}}
+                    onClickCallBack={() => {
+                      window.open("https://tally.so/r/3j5lRR", "_blank");
+                    }}
                   />
                 </div>
                 <div className="bottomArrowWrapper">

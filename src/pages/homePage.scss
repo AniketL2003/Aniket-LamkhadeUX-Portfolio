@@ -25,12 +25,15 @@
       height: 100%;
       @extend .flexCenter;
       flex-direction: column;
+      justify-content: space-evenly !important;
       .navlist {
         font-family: $poppins-bold;
         color: $Text-Grey-Color;
         font-size: 28px;
         height: 20%;
         cursor: pointer;
+        height: fit-content;
+        // margin-bottom: ;
         &:hover {
           color: $orange;
         }

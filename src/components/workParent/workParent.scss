@@ -56,11 +56,12 @@
         }
       }
     }
-  }
-  .viewProjectBtn {
-    margin-top: 45px;
-    width: 35%;
-    min-width: 250px;
+    .viewProjectBtn {
+      margin-top: 45px;
+      width: 35%;
+      min-width: 250px;
+      font-family: $poppins-bold;
+    }
   }
   .cardProjectWrapper {
     padding: 60px 0;
