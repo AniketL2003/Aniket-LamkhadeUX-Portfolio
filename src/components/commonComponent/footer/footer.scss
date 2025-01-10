@@ -35,6 +35,10 @@
         .contactIcons {
           height: 50%;
           margin-left: 25px;
+          &:hover {
+            scale: 1.1;
+            cursor: pointer;
+          }
         }
       }
     }
