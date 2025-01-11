@@ -22,6 +22,7 @@
         align-items: center;
         @media (max-width: 650px) {
           justify-content: center;
+          height: 15%;
         }
         .imageContainer {
           height: 50%;
@@ -34,6 +35,9 @@
         }
         .statusTagContainer {
           height: 20%;
+          @media (max-width: 650px) {
+            height: 25%;
+          }
           .statusTag {
             height: 100%;
           }
@@ -42,26 +46,50 @@
     }
     .tittleContainer {
       width: 100%;
+      @media (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       .mainTitleContainer {
         @extend .flexColumn;
         align-items: flex-start;
         padding: 2% 0;
+        @media (max-width: 650px) {
+          font-size: 28px;
+          align-items: center;
+        }
         .title {
           font-family: $lunema-bold;
           font-size: 38px;
+          @media (max-width: 650px) {
+            font-size: 30px;
+            text-align: center;
+          }
         }
       }
-      .subtitleContainer {
-        width: 100%;
+      .subT {
+        width: 70%;
+        display: flex;
         .subTitle {
-          display: flex;
           font-family: $poppins-regular;
           font-size: 14px;
+          color: $Text-Grey-Color;
+          @media (max-width: 650px) {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+          }
           // width: 60%;
+          text-align: left;
           .subTextHighlight {
             color: $orange;
             font-family: $poppins-bold;
             padding: 0 0.5%;
+            @media (max-width: 650px) {
+              font-size: 10px;
+              text-align: center;
+            }
           }
         }
       }
@@ -78,6 +106,10 @@
             @extend .flexSpaceBetween;
             height: 45%;
             align-items: center;
+            @media (max-width: 650px) {
+              justify-content: center;
+            }
+
             .primaryBtn {
               // background-color: $orange;
               // border: 1px solid $orange;
@@ -88,7 +120,13 @@
               padding: 0.5% 2%;
               text-transform: none;
               // height: 30%;
-              width: 95%;
+              width: 70%;
+              @media (max-width: 1000px) {
+                width: 50%;
+              }
+              @media (max-width: 650px) {
+                width: 100%;
+              }
             }
             .SecondoryBtn {
               border: 1px solid $orange;
@@ -150,6 +188,20 @@
         .buttonWrapper {
           width: 100% !important;
         }
+      }
+    }
+  }
+  .subtitleContainer {
+    width: 100%;
+    .subTitle {
+      display: flex;
+      font-family: $poppins-regular;
+      font-size: 14px;
+      // width: 60%;
+      .subTextHighlight {
+        color: $orange;
+        font-family: $poppins-bold;
+        padding: 0 0.5%;
       }
     }
   }
