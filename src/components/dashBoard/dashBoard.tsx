@@ -2,9 +2,19 @@ import "./dashBoard.scss";
 import statusTag from "../../asset/images/avaialable.png.png";
 import downArrow from "../../asset/svgs/Vector.svg";
 import LoadingButtonCustom from "../commonComponent/customBtn";
-import buttonLogo from "../../asset/svgs/buttonLogo.svg";
 import profileImg from "../../asset/images/profileImage.png";
+import Lottie from "react-lottie";
+import animationData from "../../asset/lottie/arrowAnimation.json";
 export const DashBoard = () => {
+  const defaultOptions = {
+    loop: true, // Whether the animation should loop
+    autoplay: true, // Whether the animation should start automatically
+    animationData: animationData, // The animation data you imported
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice", // Keeps the aspect ratio of the animation
+    },
+  };
+
   return (
     <div className="dashBoardParent">
       <div className="dashBoardWrapper">
@@ -18,6 +28,13 @@ export const DashBoard = () => {
             <div className="mainTitleContainer">
               <span className="title">Your friendly Product desginer</span>
               <span className="title">improving experiences.</span>
+            </div>
+            <div className="subT">
+              <span className="subTitle">
+                My focus is on simplifying user interactions while enhancing
+                usability. <span className="subTextHighlight"> Together</span>,
+                let’s create designs that make life better for everyone.
+              </span>
             </div>
           </div>
           <div className="bottomWrapper">
@@ -33,7 +50,16 @@ export const DashBoard = () => {
                   />
                 </div>
                 <div className="bottomArrowWrapper">
-                  <img src={downArrow} alt="arrow" className="bottomArrow" />
+                  {/* <img src={downArrow} alt="arrow" className="bottomArrow" /> */}
+                  <Lottie
+                    options={defaultOptions}
+                    style={{
+                      height: "75px",
+                      marginBottom: "75px",
+                      width: "75px",
+                      margin: "0px",
+                    }}
+                  />
                 </div>
               </div>
             </div>
