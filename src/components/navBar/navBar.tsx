@@ -4,6 +4,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { useState } from "react";
 import { IconButton } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 interface NavBarProps {
   setHandleResponsiveNavBars: (data: boolean) => void;
@@ -12,7 +13,7 @@ interface NavBarProps {
 export const NavBar = (props: NavBarProps) => {
   const { setHandleResponsiveNavBars } = props;
   const [navBarState, setNavBarState] = useState(false);
-
+  const navigate = useNavigate();
   const toggleNavBarState = () => {
     const newState = !navBarState; // Compute the new state
     setNavBarState(newState); // Update the local state
@@ -26,8 +27,22 @@ export const NavBar = (props: NavBarProps) => {
           <img src={logo} alt="Logo" className="appLogo" />
         </div>
         <div className="navListContainer">
-          <span className="navlist navlist1">Home</span>
-          <span className="navlist">Work</span>
+          <span
+            className="navlist navlist1"
+            onClick={() => {
+              navigate("/home");
+            }}
+          >
+            Home
+          </span>
+          <span
+            className="navlist"
+            onClick={() => {
+              navigate("/work");
+            }}
+          >
+            Work
+          </span>
           <span className="navlist">About</span>
           <span
             className="navlist"

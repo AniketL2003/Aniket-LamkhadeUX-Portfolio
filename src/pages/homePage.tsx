@@ -9,7 +9,9 @@ export const HomePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/home");
+    if (window.location.pathname === "/") {
+      navigate("/home");
+    }
   }, []);
   return (
     <>
@@ -18,8 +20,22 @@ export const HomePage = () => {
         <div className="outletWrapper">
           {handleResponsiveNavBars ? (
             <div className="responsiveNavBar">
-              <span className="navlist navlist1">Home</span>
-              <span className="navlist">Work</span>
+              <span
+                className="navlist navlist1"
+                onClick={() => {
+                  navigate("/home");
+                }}
+              >
+                Home
+              </span>
+              <span
+                className="navlist"
+                onClick={() => {
+                  navigate("/work");
+                }}
+              >
+                Work
+              </span>
               <span className="navlist">About</span>
               <span
                 className="navlist"
@@ -33,7 +49,7 @@ export const HomePage = () => {
           ) : (
             <>
               <Outlet />
-              <Footer/>
+              <Footer />
             </>
           )}
         </div>
