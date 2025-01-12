@@ -21,7 +21,6 @@
         height: 20%;
         align-items: center;
         @media (max-width: 650px) {
-          justify-content: center;
           height: 15%;
         }
         .imageContainer {
@@ -64,20 +63,24 @@
           font-size: 38px;
           @media (max-width: 650px) {
             font-size: 30px;
-            text-align: center;
+            text-align: left;
+            width: 100%;
           }
         }
       }
       .subT {
         width: 70%;
         display: flex;
+        @media (max-width: 650px) {
+          width: 100%;
+        }
         .subTitle {
           font-family: $poppins-regular;
-          font-size: 14px;
+          font-size: 18px;
           color: $Text-Grey-Color;
           @media (max-width: 650px) {
-            font-size: 12px;
-            text-align: center;
+            font-size: 14px;
+            text-align: left;
             margin-top: 10px;
           }
           // width: 60%;
@@ -87,7 +90,7 @@
             font-family: $poppins-bold;
             padding: 0 0.5%;
             @media (max-width: 650px) {
-              font-size: 10px;
+              font-size: 14px;
               text-align: center;
             }
           }
@@ -188,20 +191,6 @@
         .buttonWrapper {
           width: 100% !important;
         }
-      }
-    }
-  }
-  .subtitleContainer {
-    width: 100%;
-    .subTitle {
-      display: flex;
-      font-family: $poppins-regular;
-      font-size: 14px;
-      // width: 60%;
-      .subTextHighlight {
-        color: $orange;
-        font-family: $poppins-bold;
-        padding: 0 0.5%;
       }
     }
   }

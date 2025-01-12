@@ -1,0 +1,61 @@
+@import "../../asset/styles/gobal.scss";
+@import "../../asset/styles/variable.scss";
+
+.workListParent {
+  width: 86%;
+  padding: 4% 7%;
+  .workListWrapper {
+    @extend .flex;
+    width: 100%;
+    margin-bottom: 100px;
+    .workListContainer {
+      @extend .flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .workListImg {
+        width: 45%;
+        min-width: 400px;
+        max-height: 400px;
+        border-radius: 10px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          min-width: 0;
+        }
+      }
+      .workInfoContainer {
+        @extend .flexColumn;
+        width: 40%;
+        min-width: 400px;
+        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          min-width: 0;
+          margin-top: 10px;
+        }
+        .workInfoTextTitle {
+          font-family: $poppins-bold;
+          color: black;
+          font-size: 24px;
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        .workInfoText {
+          font-family: $poppins-regular;
+          color: $Text-Grey-Color;
+          font-size: 20px;
+          margin-bottom: 20px;
+          text-align: left;
+        }
+        .primaryBtn {
+          width: 30%;
+          // border-radius: 10px;
+          min-width: 150px;
+        }
+      }
+    }
+  }
+  .flexDirection {
+    flex-direction: row-reverse;
+  }
+}

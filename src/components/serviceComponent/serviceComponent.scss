@@ -24,6 +24,9 @@
               width: 100%;
               min-width: 0;
             }
+            @media (max-width: 650px) {
+              font-size: 30px;
+            }
           }
         }
         .serviceInfoContainer {
@@ -40,6 +43,9 @@
             @media screen and (max-width: 768px) {
               width: 100%;
               min-width: 0;
+            }
+            @media (max-width: 650px) {
+              font-size: 14px;
             }
             .highlightText {
               color: $orange;
@@ -77,6 +83,9 @@
             font-family: $poppins-regular;
             color: $Text-Grey-Color;
             font-size: 20px;
+            @media (max-width: 650px) {
+              font-size: 14px;
+            }
           }
         }
         .serviceImgContainer {
