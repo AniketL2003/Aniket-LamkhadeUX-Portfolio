@@ -2,24 +2,27 @@ import "./navBar.scss";
 import logo from "../../asset/images/appLogo.png";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 interface NavBarProps {
   setHandleResponsiveNavBars: (data: boolean) => void;
+  handleResponsiveNavBars: boolean;
 }
 
 export const NavBar = (props: NavBarProps) => {
-  const { setHandleResponsiveNavBars } = props;
-  const [navBarState, setNavBarState] = useState(false);
+  const { setHandleResponsiveNavBars, handleResponsiveNavBars } = props;
+  const [navBarState, setNavBarState] = useState(handleResponsiveNavBars);
   const navigate = useNavigate();
   const toggleNavBarState = () => {
     const newState = !navBarState; // Compute the new state
     setNavBarState(newState); // Update the local state
     setHandleResponsiveNavBars(newState); // Pass the updated state to the parent
   };
-
+  useEffect(() => {
+    setNavBarState(handleResponsiveNavBars);
+  }, [handleResponsiveNavBars]);
   return (
     <div className="navBarWrapper">
       <div className="navBarContainer">

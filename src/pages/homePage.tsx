@@ -16,7 +16,7 @@ export const HomePage = () => {
   return (
     <>
       <div className="homeWrapper">
-        <NavBar setHandleResponsiveNavBars={setHandleResponsiveNavBars} />
+        <NavBar setHandleResponsiveNavBars={setHandleResponsiveNavBars} handleResponsiveNavBars={handleResponsiveNavBars}/>
         <div className="outletWrapper">
           {handleResponsiveNavBars ? (
             <div className="responsiveNavBar">
@@ -24,6 +24,7 @@ export const HomePage = () => {
                 className="navlist navlist1"
                 onClick={() => {
                   navigate("/home");
+                  setHandleResponsiveNavBars(false);
                 }}
               >
                 Home
@@ -32,15 +33,24 @@ export const HomePage = () => {
                 className="navlist"
                 onClick={() => {
                   navigate("/work");
+                  setHandleResponsiveNavBars(false);
                 }}
               >
                 Work
               </span>
-              <span className="navlist">About</span>
+              <span
+                className="navlist"
+                onClick={() => {
+                  setHandleResponsiveNavBars(false);
+                }}
+              >
+                About
+              </span>
               <span
                 className="navlist"
                 onClick={() => {
                   window.open("https://tally.so/r/3j5lRR", "_blank");
+                  setHandleResponsiveNavBars(false);
                 }}
               >
                 Contact
