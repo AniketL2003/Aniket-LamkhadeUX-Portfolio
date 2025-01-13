@@ -25,7 +25,7 @@
       }
       .workInfoContainer {
         @extend .flexColumn;
-        width: 40%;
+        width: 45%;
         min-width: 400px;
         justify-content: space-between;
         @media screen and (max-width: 768px) {
