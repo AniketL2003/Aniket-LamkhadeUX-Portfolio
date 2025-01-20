@@ -1,0 +1,80 @@
+@import "../../../asset/styles/gobal.scss";
+@import "../../../asset/styles/variable.scss";
+
+.workDetailsWrapper {
+  width: 86%;
+  padding: 4% 7%;
+  @extend .flexColumn;
+  // goal class for under line
+  .underLineText {
+    border-bottom: 3px solid $orange;
+  }
+  align-items: start;
+  .workDetailsContianer {
+    width: 100%;
+    .workProblemPageContainer {
+      width: 100%;
+      padding: 20px 0px;
+      .workTitleHeadingWrapper {
+        width: 100%;
+        @extend .flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        .headingContainer {
+          @extend .flex;
+          align-items: baseline;
+          flex-wrap: wrap;
+          .Heading {
+            padding-right: 20px;
+            font-size: 38px;
+            font-family: $lunema-bold;
+          }
+          .subHeadingWrapper {
+            .subHeading {
+              font-size: 16px;
+              font-family: $poppins-medium;
+              padding-right: 5px;
+              color: $orange;
+              border-right: 2.3px solid black;
+              margin-right: 5px;
+            }
+            .subHeading:last-child {
+              border: none;
+            }
+          }
+        }
+        .dateContainer {
+          .date {
+            font-size: 30px;
+            font-family: $poppins-regular;
+            color: $Text-Grey-Color;
+          }
+        }
+      }
+      .workImageWrapper {
+        width: 100%;
+        padding: 5% 0;
+        .workImage {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .problemDescription {
+        @extend .flexColumn;
+        align-items: start;
+        padding: 20px 0;
+        .descriptionHeading {
+          font-family: $poppins-semibold;
+          font-size: 24px;
+        }
+        .description {
+          font-family: $poppins-light;
+          font-size: 20px;
+          padding: 10px 0;
+          color: $Text-Grey-Color;
+        }
+      }
+    }
+  }
+}
