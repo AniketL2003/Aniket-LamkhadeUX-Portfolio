@@ -3,8 +3,10 @@ import coolTronImg from "../../asset/images/coolTronWallpaper.png";
 import inGateImg from "../../asset/images/inGateWallpaper.png";
 import retroRing from "../../asset/images/retroRingWallpaper.png";
 import { ProjectButton } from "../commonComponent/projectButton/projectButton";
+import { useNavigate } from "react-router-dom";
 
 export const WorkListComponent = () => {
+  const navigate = useNavigate();
   const workListArray = [
     {
       img: inGateImg,
@@ -19,6 +21,9 @@ export const WorkListComponent = () => {
       description:
         "Cooltron Streamlined AC and Refrigerator repair services. Connecting customers, admins, and technicians for efficient service. Real-time tracking and seamless communication for hassle-free repairs.",
       flexFlag: true,
+      onClick: () => {
+        navigate("/work-details");
+      },
     },
     {
       img: retroRing,
@@ -47,7 +52,9 @@ export const WorkListComponent = () => {
                   className="primaryBtn"
                   //   className="primaryBtn"
                   //   buttonLabel={"View"}
-                  onClickCallBack={() => {}}
+                  onClickCallBack={() => {
+                    item.onClick && item.onClick();
+                  }}
                 />
               </div>
             </div>

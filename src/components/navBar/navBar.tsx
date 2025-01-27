@@ -26,7 +26,7 @@ export const NavBar = (props: NavBarProps) => {
   return (
     <div className="navBarWrapper">
       <div className="navBarContainer">
-        <div className="logoContainer">
+        <div className="logoContainer" onClick={() => navigate("/home")}>
           <img src={logo} alt="Logo" className="appLogo" />
         </div>
         <div className="navListContainer">

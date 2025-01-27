@@ -36,15 +36,15 @@
   src: local("poppinsExtraBold"),
     url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
 }
-@font-face{
+@font-face {
   font-family: "lunemaRegular";
-  src: local('lunemaRegular'),
-  url('../fonts/Lunema\ Regular.otf') format('truetype');
+  src: local("lunemaRegular"),
+    url("../fonts/Lunema\ Regular.otf") format("truetype");
 }
-@font-face{
+@font-face {
   font-family: "lunemaUltraBold";
-  src: local('lunemaUltraBold'),
-  url('../fonts/Lunema\ Ultra\ bold.otf') format('truetype');
+  src: local("lunemaUltraBold"),
+    url("../fonts/Lunema\ Ultra\ bold.otf") format("truetype");
 }
 
 $poppins-bold: poppinsBold;
@@ -53,8 +53,8 @@ $poppins-light: poppinsLight;
 $poppins-semibold: poppinsSemiBold;
 $poppins-medium: poppinsMedium;
 $poppins-ExtraBold: poppinsExtraBold;
-$lunema:lunemaRegular;
-$lunema-bold:lunemaUltraBold;
+$lunema: lunemaRegular;
+$lunema-bold: lunemaUltraBold;
 
 $xs: 0px;
 $sm: 600px;
@@ -64,7 +64,7 @@ $xl: 1536px;
 
 //Color
 
-$Text-Grey-Color:#828282;
-$orange:#E27022;
-$background-Color:#FAFAFA;
-$footer-Color:#FFDAC0;
+$Text-Grey-Color: #828282;
+$orange: #e27022;
+$background-Color: #f6f4f1;
+$footer-Color: #ffdac0;
