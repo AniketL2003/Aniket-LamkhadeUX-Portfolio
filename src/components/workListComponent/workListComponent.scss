@@ -46,6 +46,10 @@
           font-size: 20px;
           margin-bottom: 20px;
           text-align: left;
+          @media (max-width: 650px) {
+            font-size: 14px;
+            text-align: left;
+          }
         }
         .primaryBtn {
           width: 30%;

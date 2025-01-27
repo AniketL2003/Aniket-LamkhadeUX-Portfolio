@@ -16,6 +16,7 @@ import sekectIcon from "../../../asset/images/sketchIcon.png";
 import illustratorIcon from "../../../asset/images/illustratorIcon.png";
 import miroIcon from "../../../asset/images/miroIcon.png";
 import { ProjectButton } from "../../commonComponent/projectButton/projectButton";
+import { useNavigate } from "react-router-dom";
 export const WorkDetails = () => {
   const coolTron = {
     workDetails: {
@@ -71,7 +72,7 @@ export const WorkDetails = () => {
       ],
     },
   };
-
+const navigate = useNavigate();
   const renderSection = (section: any) => {
     switch (section.type) {
       case "problem":
@@ -241,7 +242,9 @@ export const WorkDetails = () => {
     <>
       <div className="workDetailsWrapper">
         <div className="buttonWrapper">
-          <GoBackButton />
+          <GoBackButton onClickCallBack={()=>{
+            navigate("/work");
+          }} />
         </div>
         <div className="workDetailsContianer">
           {/* <div className="workProblemPageContainer">
