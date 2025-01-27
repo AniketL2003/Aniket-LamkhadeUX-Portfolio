@@ -1,8 +1,7 @@
 import "./dashBoard.scss";
 import statusTag from "../../asset/images/avaialable.png.png";
-import downArrow from "../../asset/svgs/Vector.svg";
 import LoadingButtonCustom from "../commonComponent/customBtn";
-import profileImg from "../../asset/images/profileImage.png";
+import profileImg from "../../asset/images/profileImage-2.png";
 import Lottie from "react-lottie";
 import animationData from "../../asset/lottie/arrowAnimation.json";
 export const DashBoard = () => {
@@ -26,8 +25,9 @@ export const DashBoard = () => {
           </div>
           <div className="tittleContainer">
             <div className="mainTitleContainer">
-              <span className="title">Your friendly Product desginer</span>
-              <span className="title">improving experiences.</span>
+              <span className="title">
+                Your friendly Product desginer improving experiences.
+              </span>
             </div>
             <div className="subT">
               <span className="subTitle">

@@ -51,8 +51,7 @@
         align-items: center;
       }
       .mainTitleContainer {
-        @extend .flexColumn;
-        align-items: flex-start;
+        @extend .flex;
         padding: 2% 0;
         @media (max-width: 650px) {
           font-size: 28px;
@@ -61,6 +60,7 @@
         .title {
           font-family: $lunema-bold;
           font-size: 38px;
+          text-align: left;
           @media (max-width: 650px) {
             font-size: 30px;
             text-align: left;
@@ -179,7 +179,8 @@
       justify-content: flex-end;
       .profleImage {
         height: 80%;
-        width: 80%;
+        width: 100%;
+        filter: grayscale(50%);
       }
     }
     // responsive media querys

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import buttonIcon from "../../../asset/svgs/projectBtn.svg";
+
 const StyledWrapper = styled.div`
   .cssbuttons-io-button {
     background: white;
@@ -53,7 +54,14 @@ const StyledWrapper = styled.div`
   .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
   }
+
+  @media (max-width: 650px) {
+    .cssbuttons-io-button {
+      font-size: 14px;
+    }
+  }
 `;
+
 interface ProjectButtonProps {
   onClickCallBack: () => void;
   buttonLabel: string;

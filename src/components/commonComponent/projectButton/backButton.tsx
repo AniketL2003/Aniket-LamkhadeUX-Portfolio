@@ -52,14 +52,20 @@ const StyledWrapper = styled.div`
   .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
   }
+  @media (max-width: 650px) {
+    .cssbuttons-io-button {
+      font-size: 14px;
+    }
+  }
 `;
 
-export const GoBackButton = () => {
+export const GoBackButton = (props:any) => {
+  const { onClickCallBack } = props;
   return (
     <StyledWrapper>
       <button
         className={`cssbuttons-io-button`}
-        //   onClick={onClickCallBack}
+          onClick={onClickCallBack}
       >
         <div className="icon">
           <img src={buttonIcon} alt="icon" height={"100%"} width={"100%"} />
