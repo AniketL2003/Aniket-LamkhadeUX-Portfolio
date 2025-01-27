@@ -11,6 +11,7 @@
     border-bottom: 1px solid $Text-Grey-Color;
     .appLogo {
       height: 45px;
+      cursor: pointer;
     }
     .navListContainer {
       @extend .flexSpaceBetween;
@@ -29,7 +30,7 @@
         color: $orange;
       }
     }
-    .menuIcon{
+    .menuIcon {
       display: none;
       cursor: pointer;
     }
@@ -43,7 +44,7 @@
       .navListContainer {
         display: none;
       }
-      .menuIcon{
+      .menuIcon {
         display: block !important;
       }
     }
