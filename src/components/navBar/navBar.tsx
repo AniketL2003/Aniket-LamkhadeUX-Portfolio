@@ -46,7 +46,14 @@ export const NavBar = (props: NavBarProps) => {
           >
             Work
           </span>
-          <span className="navlist">About</span>
+          <span
+            className="navlist"
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
+            About
+          </span>
           <span
             className="navlist"
             onClick={() => {

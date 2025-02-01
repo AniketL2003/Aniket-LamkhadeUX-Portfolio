@@ -41,6 +41,7 @@ export const HomePage = () => {
               <span
                 className="navlist"
                 onClick={() => {
+                  navigate("/about");
                   setHandleResponsiveNavBars(false);
                 }}
               >

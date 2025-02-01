@@ -27,9 +27,9 @@ export const WorkListComponent = () => {
     },
     {
       img: retroRing,
-      title: "Cooltron Streamlining AC & Refrigerator Repairs Service",
+      title: "A platform to share memories and connect nostalgically.",
       description:
-        "Cooltron Streamlined AC and Refrigerator repair services. Connecting customers, admins, and technicians for efficient service. Real-time tracking and seamless communication for hassle-free repairs.",
+        "Retroring is a social media app designed for nostalgia lovers. It blends aesthetics with modern functionality, creating a unique platform to share memories, connect with like-minded people, and explore eye catchy-inspired content.",
       flexFlag: false,
     },
   ];
