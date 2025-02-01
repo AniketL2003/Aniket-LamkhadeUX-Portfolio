@@ -26,7 +26,7 @@ export const DashBoard = () => {
           <div className="tittleContainer">
             <div className="mainTitleContainer">
               <span className="title">
-                Your friendly Product desginer improving experiences.
+                Your Friendly Product Designer Improving Experiences.
               </span>
             </div>
             <div className="subT">

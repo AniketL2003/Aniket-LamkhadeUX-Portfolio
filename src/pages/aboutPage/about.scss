@@ -1,0 +1,181 @@
+@import "../../asset/styles/gobal.scss";
+@import "../../asset/styles/variable.scss";
+
+.aboutWrapper {
+  .aboutpageParent {
+    width: 86%;
+    padding: 0 7%;
+    padding-top: 4%;
+    @extend .flexSpaceBetween;
+    .aboutPageContainer {
+      width: 50%;
+      @extend .flexColumn;
+      justify-content: start;
+      align-items: start;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+      .aboutHeader {
+        .headerText {
+          font-size: 38px;
+          font-family: $lunema-bold;
+          @media (max-width: 650px) {
+            font-size: 28px;
+            text-align: left;
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      .textContainer {
+        text-align: left;
+        @extend .flexColumn;
+        .subText {
+          font-size: 20px;
+          font-family: $poppins-regular;
+          padding: 10px 0;
+          // color: $Text-Grey-Color;
+          margin-bottom: 20px;
+          @media (max-width: 650px) {
+            font-size: 14px;
+            text-align: left;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .aboutPageImgWrapper {
+      @media (max-width: 1000px) {
+        display: none;
+      }
+      .aboutImg {
+        filter: grayscale(50%);
+      }
+    }
+  }
+  .aboutInfoParent {
+    width: 86%;
+    padding: 4% 7%;
+    background-color: $background-Color;
+    .infoContainer {
+      @extend .flex;
+      justify-content: space-evenly;
+      align-items: start;
+      flex-wrap: wrap;
+      .toolsWrapper {
+        @extend .flexColumn;
+        min-width: 250px;
+        padding-bottom: 20px;
+        .toolsHeader {
+          text-transform: uppercase;
+          font-family: $poppins-bold;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .toolsList {
+          @extend .flexColumn;
+          .tools {
+            font-family: $poppins-regular;
+            font-size: 18px;
+            color: $Text-Grey-Color;
+            padding-bottom: 8px;
+            @media (max-width: 650px) {
+              font-size: 14px;
+              text-align: center;
+              width: 100%;
+            }
+          }
+          .headingText {
+            font-family: $poppins-medium;
+            font-size: 18px;
+            @media (max-width: 650px) {
+              font-size: 14px;
+              width: 100%;
+            }
+          }
+          .subText {
+            font-family: $poppins-regular;
+            font-size: 16px;
+            color: $orange;
+            padding-bottom: 8px;
+            @media (max-width: 650px) {
+              font-size: 14px;
+              text-align: center;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aboutGalleryParent {
+    width: 86%;
+    padding: 4% 7%;
+    @media ((max-width: 1200px)) {
+      display: none;
+    }
+
+    @media ((max-width: 450px)) {
+      display: block !important;
+    }
+    .galleryHeader {
+      @extend .flex;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      .headerText {
+        font-family: $poppins-bold;
+        font-size: 18px;
+      }
+    }
+    .galleryWrapper {
+      @extend .flex;
+      flex-wrap: wrap;
+      @media ((max-width: 1200px)) {
+        display: none;
+      }
+
+      @media ((max-width: 450px)) {
+        justify-content: center;
+        display: flex !important;
+      }
+      .imgContainer {
+        @extend .flexColumn;
+        width: 25%;
+        min-width: 250px;
+
+        @media ((max-width: 450px)) {
+          width: 100%;
+        }
+        .imageHeighWidth {
+          height: 100%;
+          width: calc(100% - 20px);
+          padding: 0 20px;
+        }
+        .container1Img {
+          height: 60%;
+          @media ((max-width: 450px)) {
+            height: 90%;
+          }
+        }
+        .container2Img {
+          height: 75%;
+          @media ((max-width: 450px)) {
+            height: 90%;
+          }
+        }
+        .container3Img {
+          height: 45%;
+        }
+        .container4Img {
+          height: 50%;
+          @media ((max-width: 450px)) {
+            height: 45%;
+          }
+        }
+        .paddingClass {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
