@@ -6,6 +6,7 @@ import container3Img1 from "../../asset/images/IMG_0613 (2)-Photoroom 4.png";
 import container3Img2 from "../../asset/images/IMG_0613 (2)-Photoroom 5.png";
 import container4Img1 from "../../asset/images/IMG_0613 (2)-Photoroom 6.png";
 import container4Img2 from "../../asset/images/IMG_0613 (2)-Photoroom 7.png";
+import { useEffect } from "react";
 export const AboutPage = () => {
   const tools = [
     "Figma",
@@ -28,6 +29,9 @@ export const AboutPage = () => {
     "Visual Design",
     "Typography",
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="aboutWrapper">
       <div className="aboutpageParent">

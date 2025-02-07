@@ -7,6 +7,7 @@
   .outletWrapper {
     height: calc(100% - 81px);
     overflow: auto;
+    scroll-behavior: auto;
     &::-webkit-scrollbar {
       width: 5px;
     }
@@ -37,6 +38,9 @@
         &:hover {
           color: $orange;
         }
+      }
+      .active {
+        color: $orange;
       }
       .navlist1 {
         color: $orange;

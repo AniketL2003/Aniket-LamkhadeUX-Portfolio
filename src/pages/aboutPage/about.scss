@@ -155,12 +155,15 @@
           height: 60%;
           @media ((max-width: 450px)) {
             height: 90%;
+            max-height: 250px;
           }
         }
         .container2Img {
           height: 75%;
           @media ((max-width: 450px)) {
             height: 90%;
+            // display: none;
+            max-height: 250px;
           }
         }
         .container3Img {
