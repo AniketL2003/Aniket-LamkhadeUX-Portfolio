@@ -4,7 +4,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { useEffect, useState } from "react";
 import { IconButton } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 interface NavBarProps {
   setHandleResponsiveNavBars: (data: boolean) => void;
@@ -15,6 +15,7 @@ export const NavBar = (props: NavBarProps) => {
   const { setHandleResponsiveNavBars, handleResponsiveNavBars } = props;
   const [navBarState, setNavBarState] = useState(handleResponsiveNavBars);
   const navigate = useNavigate();
+  const location = useLocation();
   const toggleNavBarState = () => {
     const newState = !navBarState; // Compute the new state
     setNavBarState(newState); // Update the local state
@@ -23,6 +24,9 @@ export const NavBar = (props: NavBarProps) => {
   useEffect(() => {
     setNavBarState(handleResponsiveNavBars);
   }, [handleResponsiveNavBars]);
+
+  const isActive = (path: string) => location.pathname.includes(path);
+
   return (
     <div className="navBarWrapper">
       <div className="navBarContainer">
@@ -31,7 +35,7 @@ export const NavBar = (props: NavBarProps) => {
         </div>
         <div className="navListContainer">
           <span
-            className="navlist navlist1"
+            className={`navlist navlist1 ${isActive("/home") ? "active" : ""}`}
             onClick={() => {
               navigate("/home");
             }}
@@ -39,7 +43,7 @@ export const NavBar = (props: NavBarProps) => {
             Home
           </span>
           <span
-            className="navlist"
+            className={`navlist ${isActive("/work") ? "active" : ""}`}
             onClick={() => {
               navigate("/work");
             }}
@@ -47,7 +51,7 @@ export const NavBar = (props: NavBarProps) => {
             Work
           </span>
           <span
-            className="navlist"
+            className={`navlist ${isActive("/about") ? "active" : ""}`}
             onClick={() => {
               navigate("/about");
             }}
@@ -55,7 +59,7 @@ export const NavBar = (props: NavBarProps) => {
             About
           </span>
           <span
-            className="navlist"
+            className={`navlist ${isActive("/contact") ? "active" : ""}`}
             onClick={() => {
               window.open("https://tally.so/r/3j5lRR", "_blank");
             }}

@@ -14,6 +14,9 @@ export const WorkListComponent = () => {
       description:
         "InGate is a smart, secure Visitor Management System app that simplifies entry processes with a user-friendly design. Featuring real-time tracking and efficient data management, it ensures seamless coordination between visitors and hosts.",
       flexFlag: false,
+      onClick: () => {
+        navigate("/work-details?project=inGate");
+      },
     },
     {
       img: coolTronImg,
@@ -22,7 +25,7 @@ export const WorkListComponent = () => {
         "Cooltron Streamlined AC and Refrigerator repair services. Connecting customers, admins, and technicians for efficient service. Real-time tracking and seamless communication for hassle-free repairs.",
       flexFlag: true,
       onClick: () => {
-        navigate("/work-details");
+        navigate("/work-details?project=coolTron");
       },
     },
     {
