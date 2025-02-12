@@ -17,6 +17,9 @@ import figmaIcon from "../../../asset/images/figmaIcon.png";
 import sekectIcon from "../../../asset/images/sketchIcon.png";
 import illustratorIcon from "../../../asset/images/illustratorIcon.png";
 import miroIcon from "../../../asset/images/miroIcon.png";
+import openAi from "../../../asset/svgs/openAI.svg";
+import behanceIcon from "../../../asset/images/behanceImg.png";
+import invision from "../../../asset/svgs/invision.svg";
 
 //Imagesfor InGate
 import InGateImg from "../../../asset/images/inGateBackgroundImg.svg";
@@ -30,7 +33,32 @@ import inGatePrototypeImg1 from "../../../asset/images/inGatePrototypeImg1.png";
 import inGatePrototypeImg2 from "../../../asset/images/inGatePrototypeImg2.png";
 import inGatePrototypeImg3 from "../../../asset/images/inGatePrototypeImg3.png";
 import inGatePrototypeImg4 from "../../../asset/images/inGatePrototypeImg4.png";
-import behanceIcon from "../../../asset/images/behanceImg.png";
+
+// Images for RetroRing
+import retroRingImg from "../../../asset/svgs/retroRingDetailWallpaper.svg";
+import retroRingResearchImg1 from "../../../asset/images/retroRingResearchImg1.png";
+import retroRingResearchImg2 from "../../../asset/images/retroRingResearchImg2.png";
+import retroRingResearchImg3 from "../../../asset/images/retroRingResearchImg3.png";
+import retroRingResearchImg4 from "../../../asset/images/retroRingResearchImg4.png";
+import retroRingIdeationImg1 from "../../../asset/images/retroRingIdeation1.png";
+import retroRingIdeationImg2 from "../../../asset/images/retroRingIdeation2.png";
+import retrpRingProtoTypeImg1 from "../../../asset/images/retroRingProtoType1.png";
+import retrpRingProtoTypeImg2 from "../../../asset/images/retroRingProtoType2.png";
+import retrpRingProtoTypeImg3 from "../../../asset/images/retroRingProtoType3.png";
+import retrpRingProtoTypeImg4 from "../../../asset/images/retroRingProtoType4.png";
+
+//investor
+import investorImg from "../../../asset/svgs/investorWorkDetailsWallpaper.svg";
+import investorResearchImg1 from "../../../asset/images/investorResearchImg1.png";
+import investorResearchImg2 from "../../../asset/images/investorResearchImg2.png";
+import investorResearchImg3 from "../../../asset/images/investorResearchImg3.png";
+import investorResearchImg4 from "../../../asset/images/investorResearchImg4.png";
+import investorIdeationImg1 from "../../../asset/images/investorIdeationImg1.png";
+import investorIdeationImg2 from "../../../asset/images/investorIdeationImg2.png";
+import investorPrototypeImg1 from "../../../asset/images/investorProtoTypeImg1.png";
+import investorPrototypeImg2 from "../../../asset/images/investorProtoTypeImg2.png";
+import investorPrototypeImg3 from "../../../asset/images/investorProtoTypeImg3.png";
+import investorPrototypeImg4 from "../../../asset/images/investorProtoTypeImg4.png";
 
 //Components
 import { ProjectButton } from "../../commonComponent/projectButton/projectButton";
@@ -94,7 +122,7 @@ export const WorkDetails = () => {
     workDetails: {
       title: "InGate",
       subtitle: ["UX RESEARCH", "UX DESGIN", "UI DESGIN", "USABILITY TEST"],
-      date: "July 2024",
+      date: "Aug 2024",
       sections: [
         {
           type: "problem",
@@ -140,11 +168,115 @@ export const WorkDetails = () => {
       ],
     },
   };
+  const retroRing = {
+    workDetails: {
+      title: "RetroRing",
+      subtitle: ["UX RESEARCH", "UX DESGIN", "UI DESGIN", "USABILITY TEST"],
+      date: "May 2024",
+      sections: [
+        {
+          type: "problem",
+          heading: "The problem",
+          description:
+            "Social media apps struggle with seamless user engagement due to complex navigation, lack of real-time engagement tracking, and ineffective role-based interactions.",
+          image: retroRingImg,
+        },
+        {
+          type: "research",
+          heading: "Research",
+          description:
+            "Addressing UI/UX challenges in real-time engagement tracking, & communication between users, and creators for an efficient social media experience in Retroring.",
+          images: [retroRingResearchImg1, retroRingResearchImg2],
+          solutionDescription:
+            "Solutions include seamless navigation, real-time engagement indicators, and smart content scheduling to enhance user experience and interaction in Retroring.",
+          solutionImages: [retroRingResearchImg3, retroRingResearchImg4],
+        },
+        {
+          type: "ideation",
+          heading: "Ideation",
+          description:
+            "Ideation for Retroring includes personalized user experiences, real-time engagement tracking, smart content scheduling, and seamless communication to enhance interactions for users, creators, and communities.",
+          images: [retroRingIdeationImg1, retroRingIdeationImg2],
+        },
+        {
+          type: "prototype",
+          heading: "Prototype",
+          description:
+            "The Retroring prototype offers a personalized user experience for creators, communities, and users. It integrates real-time engagement tracking, smart content scheduling, and seamless communication to enhance social interactions.",
+          images: [
+            [retrpRingProtoTypeImg1, retrpRingProtoTypeImg2],
+            [retrpRingProtoTypeImg3, retrpRingProtoTypeImg4],
+          ],
+        },
+        {
+          type: "tools",
+          heading: "Tools",
+          tools: [figmaIcon, miroIcon, behanceIcon, openAi],
+          buttonLabel: "Prototype",
+          buttonCallback: () => {},
+        },
+      ],
+    },
+  };
+  const investor = {
+    workDetails: {
+      title: "Investor",
+      subtitle: ["UX RESEARCH", "UX DESGIN", "UI DESGIN", "USABILITY TEST"],
+      date: "May 2024",
+      sections: [
+        {
+          type: "problem",
+          heading: "The problem",
+          description:
+            "Enhance seamless navigation with intuitive UI, real-time property tracking, and role-specific dashboards for investors, agents, and admins. Ensure a frictionless experience.",
+          image: investorImg,
+        },
+        {
+          type: "research",
+          heading: "Research",
+          description:
+            "Optimizing role-based navigation, real-time tracking, and seamless communication for investors, admins, and buyers to ensure an efficient real estate investment journey.",
+          images: [investorResearchImg1, investorResearchImg2],
+          solutionDescription:
+            "Implementing intuitive dashboards, visual tracking indicators, and smart scheduling to streamline user flow, enhancing efficiency for investors, admins, and buyers.",
+          solutionImages: [investorResearchImg3, investorResearchImg4],
+        },
+        {
+          type: "ideation",
+          heading: "Ideation",
+          description:
+            "Ideating role-specific dashboards, real-time tracking, smart scheduling, and streamlined communication to enhance the investor's experience and ensure seamless collaboration with admins and buyers.",
+          images: [investorIdeationImg1, investorIdeationImg2],
+        },
+        {
+          type: "prototype",
+          heading: "Prototype",
+          description:
+            "The Retroring prototype offers a personalized user experience for creators, communities, and users. It integrates real-time engagement tracking, smart content scheduling, and seamless communication to enhance social interactions.",
+          images: [
+            [investorPrototypeImg1, investorPrototypeImg2],
+            [investorPrototypeImg3, investorPrototypeImg4],
+          ],
+        },
+        {
+          type: "tools",
+          heading: "Tools",
+          tools: [figmaIcon, miroIcon, behanceIcon, invision],
+          buttonLabel: "Prototype",
+          buttonCallback: () => {},
+        },
+      ],
+    },
+  };
   useEffect(() => {
     if (userParam === "coolTron") {
       setProjectDetails(coolTron);
     } else if (userParam === "inGate") {
       setProjectDetails(inGate);
+    } else if (userParam === "retroRing") {
+      setProjectDetails(retroRing);
+    } else if (userParam === "investor") {
+      setProjectDetails(investor);
     } else {
       navigate("/work");
     }

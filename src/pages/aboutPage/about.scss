@@ -16,6 +16,7 @@
         width: 100%;
       }
       .aboutHeader {
+        text-align: left;
         .headerText {
           font-size: 38px;
           font-family: $lunema-bold;
@@ -45,11 +46,16 @@
       }
     }
     .aboutPageImgWrapper {
+      width: 50%;
+      @extend .flex;
+      align-items: end;
+      justify-content: end;
       @media (max-width: 1000px) {
         display: none;
       }
       .aboutImg {
-        filter: grayscale(50%);
+        // filter: grayscale(50%);
+        width: 50%;
       }
     }
   }
