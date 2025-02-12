@@ -2,6 +2,7 @@ import "./workListComponent.scss";
 import coolTronImg from "../../asset/images/coolTronWallpaper.png";
 import inGateImg from "../../asset/images/inGateWallpaper.png";
 import retroRing from "../../asset/images/retroRingWallpaper.png";
+import investor from "../../asset/images/investorWorkPaper.png";
 import { ProjectButton } from "../commonComponent/projectButton/projectButton";
 import { useNavigate } from "react-router-dom";
 
@@ -34,6 +35,20 @@ export const WorkListComponent = () => {
       description:
         "Retroring is a social media app designed for nostalgia lovers. It blends aesthetics with modern functionality, creating a unique platform to share memories, connect with like-minded people, and explore eye catchy-inspired content.",
       flexFlag: false,
+      onClick: () => {
+        navigate("/work-details?project=retroRing");
+      },
+    },
+    {
+      img: investor,
+      title:
+        "Smart, Insightful, and Seamless Real Estate Investment Experience.",
+      description:
+        "A smart and intuitive real estate investment platform that simplifies property management with real-time tracking, data-driven insights, and seamless communication between investors, agents, and buyers.",
+      flexFlag: true,
+      onClick: () => {
+        navigate("/work-details?project=investor");
+      },
     },
   ];
   return (

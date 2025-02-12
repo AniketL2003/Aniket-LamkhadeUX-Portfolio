@@ -60,10 +60,6 @@ export const AboutPage = () => {
               beauty of nature through my camera lens. I believe that great
               design, like nature, should be simple yet profound.
             </span>
-            <span className="subText">
-              Let's connect and explore impactful and memorable user
-              experiences.
-            </span>
           </div>
         </div>
         <div className="aboutPageImgWrapper">
