@@ -100,7 +100,17 @@ export const AboutPage = () => {
               <span className="headingText">Email</span>
               <span className="subText">aniketlamkhade934@gmail.com</span>
               <span className="headingText">CV</span>
-              <span className="subText">View My CV</span>
+              {/* <span className="subText">View My CV</span>  */}
+              <span className="subText">
+                <a
+                  href={require("../../asset/pdf/Aniket_Lamkhade_UI_UX_Designer.pdf")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="subText"
+                >
+                  View My CV
+                </a>
+              </span>
             </div>
           </div>
         </div>
