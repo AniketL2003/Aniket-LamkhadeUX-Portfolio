@@ -163,7 +163,11 @@ export const WorkDetails = () => {
           heading: "Tools",
           tools: [figmaIcon, miroIcon, behanceIcon, sekectIcon],
           buttonLabel: "Prototype",
-          buttonCallback: () => {},
+          buttonCallback: () => {
+            window.open(
+              "https://www.behance.net/gallery/216047277/InGate-Visitor-Management-System"
+            );
+          },
         },
       ],
     },
@@ -213,7 +217,11 @@ export const WorkDetails = () => {
           heading: "Tools",
           tools: [figmaIcon, miroIcon, behanceIcon, openAi],
           buttonLabel: "Prototype",
-          buttonCallback: () => {},
+          buttonCallback: () => {
+            window.open(
+              "https://www.behance.net/gallery/200075317/RetroRing-Community-App-Case-Study"
+            );
+          },
         },
       ],
     },
@@ -263,7 +271,11 @@ export const WorkDetails = () => {
           heading: "Tools",
           tools: [figmaIcon, miroIcon, behanceIcon, invision],
           buttonLabel: "Prototype",
-          buttonCallback: () => {},
+          buttonCallback: () => {
+            window.open(
+              "https://www.behance.net/gallery/217938145/Real-Estate-Investment-System"
+            );
+          },
         },
       ],
     },
