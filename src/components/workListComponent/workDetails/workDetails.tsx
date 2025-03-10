@@ -145,7 +145,7 @@ export const WorkDetails = () => {
           type: "ideation",
           heading: "Ideation",
           description:
-            "Ideation for Investor includes role-specific dashboards, real-time tracking, smart scheduling, and streamlined communication to enhance user experience for investors, admins, and buyers.",
+            "Ideation for InGate includes role-specific dashboards, real-time tracking, smart scheduling, and streamlined communication to enhance user experience for host, admins, security persons, and visitors.",
           images: [inGateIdeationImg1, inGateIdeationImg2],
         },
         {
@@ -230,7 +230,7 @@ export const WorkDetails = () => {
     workDetails: {
       title: "Investor",
       subtitle: ["UX RESEARCH", "UX DESGIN", "UI DESGIN", "USABILITY TEST"],
-      date: "May 2024",
+      date: "Dec 2024",
       sections: [
         {
           type: "problem",
@@ -260,7 +260,7 @@ export const WorkDetails = () => {
           type: "prototype",
           heading: "Prototype",
           description:
-            "The Retroring prototype offers a personalized user experience for creators, communities, and users. It integrates real-time engagement tracking, smart content scheduling, and seamless communication to enhance social interactions.",
+            "The Investor prototype features role-specific dashboards for investors, admins, and buyers, enabling a tailored experience with real-time tracking, smart investing, and seamless communication for an optimized investment journey.",
           images: [
             [investorPrototypeImg1, investorPrototypeImg2],
             [investorPrototypeImg3, investorPrototypeImg4],
