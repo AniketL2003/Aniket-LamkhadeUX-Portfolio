@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import buttonIcon from "../../../asset/svgs/projectBtn.svg";
+import { handleCustomButtonClickWithAnalytics } from "../../../utils/mixpanel";
 
 const StyledWrapper = styled.div`
   .cssbuttons-io-button {
@@ -74,7 +75,14 @@ export const ProjectButton = (props: ProjectButtonProps) => {
     <StyledWrapper>
       <button
         className={`cssbuttons-io-button ${className}`}
-        onClick={onClickCallBack}
+        onClick={(event: any) => {
+          onClickCallBack();
+          handleCustomButtonClickWithAnalytics(
+            onClickCallBack,
+            event,
+            buttonLabel
+          );
+        }}
       >
         {buttonLabel}
         <div className="icon">

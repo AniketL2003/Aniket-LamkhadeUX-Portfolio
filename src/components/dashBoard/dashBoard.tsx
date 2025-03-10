@@ -4,7 +4,6 @@ import LoadingButtonCustom from "../commonComponent/customBtn";
 import profileImg from "../../asset/images/profileImage.png";
 import Lottie from "react-lottie";
 import animationData from "../../asset/lottie/arrowAnimation.json";
-import { useEffect } from "react";
 export const DashBoard = () => {
   const defaultOptions = {
     loop: true, // Whether the animation should loop

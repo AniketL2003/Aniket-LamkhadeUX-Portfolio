@@ -15,6 +15,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "lottie-web": "^5.12.2",
+    "mixpanel-browser": "^2.61.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-lottie": "^1.2.10",
@@ -50,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@types/mixpanel-browser": "^2.51.0",
     "@types/react-lottie": "^1.2.10"
   }
 }

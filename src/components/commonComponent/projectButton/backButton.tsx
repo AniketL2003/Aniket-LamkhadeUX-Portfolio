@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import buttonIcon from "../../../asset/svgs/backArrow.svg";
+import { handleCustomButtonClickWithAnalytics } from "../../../utils/mixpanel";
 const StyledWrapper = styled.div`
   .cssbuttons-io-button {
     background: white;
@@ -59,13 +60,20 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export const GoBackButton = (props:any) => {
+export const GoBackButton = (props: any) => {
   const { onClickCallBack } = props;
   return (
     <StyledWrapper>
       <button
         className={`cssbuttons-io-button`}
-          onClick={onClickCallBack}
+        onClick={(event) => {
+          onClickCallBack();
+          handleCustomButtonClickWithAnalytics(
+            onClickCallBack,
+            event,
+            "Go Back"
+          );
+        }}
       >
         <div className="icon">
           <img src={buttonIcon} alt="icon" height={"100%"} width={"100%"} />

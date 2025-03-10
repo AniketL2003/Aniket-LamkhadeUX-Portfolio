@@ -152,7 +152,7 @@ export const WorkDetails = () => {
           type: "prototype",
           heading: "Prototype",
           description:
-            "The Investor prototype offers role-specific dashboards for investors, admins, and buyers, ensuring a tailored user experience. It integrates real-time tracking, smart investing, and seamless communication to streamline the investment process.",
+            "The InGate prototype offers role-specific dashboards for  host, admins, security persons, and visitors, ensuring a tailored user experience. It integrates real-time tracking, smart scheduling, and seamless communication to streamline the visitor visit process.",
           images: [
             [inGatePrototypeImg1, inGatePrototypeImg2],
             [inGatePrototypeImg3, inGatePrototypeImg4],
